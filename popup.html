@@ -5,7 +5,7 @@
     <script type="text/html" id="repository-row">
     <li data-id="{{name}}">
         <p>
-          <a href="{{git_host}}/{{name}}" target="_blank">{{name}}</a><span class="remove">x</span>
+          <a href="{{git_host}}/{{name}}" target="_blank">{{name}}</a> (<a href="{{git_host}}/{{name}}/pulls" target="_blank">pulls</a>)<span class="remove">x</span>
         </p>
         <ul class="prs">{{pullRequests}}</ul>
       </li>
@@ -53,7 +53,7 @@
       <p>
         <label for="github-apihost">Github API Host</label>
       </p>
-      <p>        
+      <p>
         <input type="text" name="github-apihost" id="github-apihost" placeholder="https://api.github.com"/>
       </p>
       <p>
